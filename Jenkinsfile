@@ -11,6 +11,7 @@ pipeline{
             steps{
                 sh 'docker --version'
                 sh 'docker build . -t abhinallana/netflixclone'
+                sh 'docker run -d abhinallana/netflixclone '
             }
             
 
