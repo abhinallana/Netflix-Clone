@@ -3,11 +3,16 @@ pipeline{
 
     stages{
         stage('Git Checkout'){
+            steps{
             git 'https://github.com/abhinallana/Netflix-Clone.git'
         }
+        }
         stage('Build Docker Image'){
-            sh 'docker --version'
+            steps{
+                sh 'docker --version'
+            }
             
+
         }
     }
     
